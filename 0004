@@ -1,0 +1,18 @@
+import re
+import os
+
+def countNum(filePath):
+	f = open(filePath,"r")
+	content = f.read()
+	words = content.split(' ')
+	num = 0
+	for word in words:
+		if word == ' ':
+			continue
+		else:
+			num += 1
+	print num
+
+countNum("c:\\TextFile\\words.txt")
+
+
